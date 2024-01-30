@@ -45,7 +45,7 @@ function informarIdade() {
 
 function calcularIMC() {
   // Fórmula para calcular IMC
-  const IMC = dadosPessoais.peso / Math.pow(dadosPessoais.altura, 2).toFixed();
+  const IMC = (dadosPessoais.peso / (dadosPessoais.altura / 100) ** 2);
 
   // Mensagem de aguardo
   console.log(`\nBeleza, já estamos com suas informações ${dadosPessoais.nome}, aguarde alguns segundos enquanto nosso sistema computa seus dados...`);
